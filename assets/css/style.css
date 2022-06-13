@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #0000FF;
+    --secondary-color: #747171;
+    --tertiary-color: #ffffff;
+}
+
+/*Update browser defaults to match style choices*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
