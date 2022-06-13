@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #0000FF;
+    --primary-color: #0b0b58;
     --secondary-color: #747171;
     --tertiary-color: #ffffff;
+    --background-color: #2d2e30;
 }
 
 /*Update browser defaults to match style choices*/
@@ -12,6 +13,155 @@
 }
 
 body {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to <header> */
+header {
+    padding: 0px 50px 10px 0;
+    background-color: var(--primary-color);   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+/*apply styles to <h1> in header*/
+header h1 {    
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 5px 10px 5px 100px;
+}
+
+/*apply styles to <a> in header*/
+header a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: var(--primary-color);
+}
+
+/*apply styles to navigation*/
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 7px 0;
+    color: var(--primary-color);
+}
+
+/*apply styles to <li> in navigation*/
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: underline 3px;
+    text-underline-offset: 3px;
+    align-items: center;
+}
+
+/*apply styles to <a> in navigation in header*/
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    color: var(--secondary-color);
+}
+
+header nav ul li a:visited {
+    color: var(--secondary-color);
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+/*apply styles to <footer>*/
+footer {    
+    background: var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*apply styles to <h4 within footer*/
+footer h4 {
+    color: var(--secondary-color);
+    font-size: 15px;
+    margin: 0;
+}
+
+/*apply styles to the <section> element*/
+section {
+    padding: 10px;
+}
+
+/* Hero Style Start */
+.hero {
+    background-image: url("../images/datascience.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-cta {
+    margin: 3.5%;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero-cta h2 {
+    font-size: 25px;
+    padding: 5px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/*About Me Styles*/
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.intro p {
+    text-align: left;
+}
+
+.section-title {
+    font-size: 35px;
+    color: var(--primary-color);
+    border-right: 3px solid;
+    padding-right: 15px;
+    text-align: right;
+    width: 40%;
+    margin: 10px 20px 20px 40px;
+}
+
+.flex-row {
+    display: flex;
 }
