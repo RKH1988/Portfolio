@@ -1,14 +1,17 @@
 #RKH Portfolio
 
 ## Description
-
-## Challenges
+This portfolio provides a snapshot of projects that I have completed throughout my career as a developer. I want employers to have an idea of my abilties and to be able to present my greatest achievements at any given moment in time. 
 
 ## Screenshot
+![screenshot](/assets/images/portfolio-screenshot.jpg)
 
 
 ## Deployed Application 
 https://rkh1988.github.io/Portfolio/
+
+## GitHub Repository
+https://github.com/RKH1988/Portfolio
 
 ### Credits
 * Surf Image <a href="https://www.flickr.com/photos/naffleskell/11310545746/in/photostream/"> Image taken on September 16, 2013 by Matthew Clark - www.flickr.com</a>
