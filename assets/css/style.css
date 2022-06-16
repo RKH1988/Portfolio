@@ -1,8 +1,6 @@
 :root {
     --primary-color: #0b0b58;
     --secondary-color: #747171;
-    --tertiary-color: #ffffff;
-    --background-color: #2d2e30;
 }
 
 /*Update browser defaults to match style choices*/
@@ -119,7 +117,6 @@ section {
 .hero {
     background-image: url("../images/datascience.jpg");
     background-size: cover;
-    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -129,8 +126,8 @@ section {
 
 .hero-cta {
     margin: 3.5%;
-    color: #fff;
-    line-height: 1.2;
+    display: flex;
+    align-items: flex-end;
 }
 
 .hero-cta h2 {
@@ -150,6 +147,8 @@ section {
 
 .intro p {
     text-align: left;
+    width: 70%;
+    font-size: 20px;
 }
 
 .section-title {
@@ -158,10 +157,86 @@ section {
     border-right: 3px solid;
     padding-right: 15px;
     text-align: right;
-    width: 40%;
-    margin: 10px 20px 20px 40px;
+    justify-content: right;
+    width: 15%;
+    margin: 10px 20px 20px 50px;
+    flex-wrap: wrap;
 }
 
 .flex-row {
     display: flex;
+}
+
+/*Work Section Styles*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+}
+
+.container {
+    justify-content: space-evenly;
+    max-width: 100%;
+    border: 5px solid var(--secondary-color);
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.container img {
+    object-fit: cover;
+    max-width: 100%;
+    filter: brightness(80%);
+    opacity: .8;
+}
+
+.container img:hover {
+    filter: brightness(100%);
+    opacity: 1;
+}
+
+.project-details {
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    z-index: auto 2;   
+    position: absolute;
+    bottom: 20px;
+}
+
+.project-details h4 {
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.project-details h5 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+/*Contact section styles*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--primary-color);
+    width: 100%
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: underline 3px;
+    text-underline-offset: 3px;
+    text-align: center;
+    width: 70%;
+    align-content: center;
+}
+
+.contact-info div a {
+    color: var(--primary-color);
+}
+
+.contact-info div a:visited {
+    color: var(--primary-color);
 }
